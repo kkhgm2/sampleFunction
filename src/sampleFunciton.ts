@@ -1,5 +1,8 @@
 
 const judgeThree = function(num: number) :string {
+    if (num < 1 || num < 100) {
+        return "1 ~ ９９ の値を入力してください"
+    }
     if (isMultipleThree(num) || isContainThree(num)) {
         return getJapaneseThree(num);
     } else {
